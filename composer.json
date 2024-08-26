@@ -1,0 +1,33 @@
+{
+    "name": "gollumeo/blizzard-api-wrapper",
+    "description": "A Laravel wrapper, for Blizzard's official API",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^11.21",
+        "orchestra/testbench": "^9.4",
+        "pestphp/pest-plugin-laravel": "^2.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gollumeo\\BlizzardApiWrapper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pierre \"Golluméo\" Mauriello"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gollumeo\\BlizzardApiWrapper\\BlizzardApiWrapperServiceProvider"
+            ]
+        }
+    }
+}
